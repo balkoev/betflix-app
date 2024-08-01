@@ -197,7 +197,7 @@ export default function MovieDetail() {
             sx={{ gap: 2 }}
           >
             {responseSequelsAndPrequels.data.map(el => (
-              <MovieCard key={el.filmId} movie={el} />
+              <MovieCard key={el.filmId} movie={el} reload />
             ))}
           </Stack>
         </Stack>
